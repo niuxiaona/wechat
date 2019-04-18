@@ -1,0 +1,49 @@
+/**index.wxss**/
+/*小程序中：index.wxml文件自动*/
+/*引入 index.wxss文件*/
+.container{
+ 
+}
+/*1.轮播图*/
+.slider,.slider swiper,.slider image{
+  height:390rpx;
+  width:100%;
+}
+/*2.九宫格*/
+/*2.1父元素*/
+.index-nav{
+  display:flex; /*弹性布局*/
+  flex-wrap:wrap;  /*换行*/
+}
+/*2.2子元素*/
+.nav-item{
+  width:33.33333%;  /*商品元素*/
+  height:200rpx;    /*商品高度*/
+  box-sizing:border-box;  
+  display:flex;    /*父元素 img text */
+  flex-direction:column;  /*img text 按列排放*/
+  justify-content: center; /*居中 水平*/
+  align-items:center; /*垂直*/
+  font-size:14px;
+  /*边框  右侧 底部*/
+  border-right:1rpx solid #ccc;
+  border-bottom:1rpx solid #ccc;
+
+}
+/*2.3小图片*/
+.nav-item image{
+  width:102rpx;
+  height:102rpx;
+}
+.nav-4{
+  width:100%;
+  height:150rpx;
+  border-bottom:1rpx solid #ccc;
+}
+.nav-4 image{
+  display:block;
+  height:50%;
+  width:50%;
+  margin:auto;
+  padding:35rpx;
+}

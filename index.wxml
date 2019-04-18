@@ -1,0 +1,30 @@
+<!--index.wxml-->
+<view class="container">
+  <!--轮播图-->
+  <view class="slider">
+    <swiper autoplay='4000'>
+      <swiper-item wx:for="{{imglist}}" wx:key="index">
+        <image src="{{item.img_url}}" lazy-load="true" mode="aspectFill"></image>
+      </swiper-item>
+    </swiper>
+  </view>
+  <!--九宫格-->
+  <view class="index-nav">
+    <!--第一行  -->
+    <view class="nav-item" wx:for="{{navlist}}" wx:key="index" id="nav-item5">
+      <image src="{{item.img_url}}" lazy-load="true" mode="aspectFill">
+      </image>
+      <text>{{item.title}}</text>
+    </view>
+    <!--第二行  -->
+    <view class="nav-4">
+      <image src="/pages/img/logo1.png"></image>
+    </view>
+    <!--第三行  -->
+    <view class="nav-item" wx:for="{{navlist1}}" wx:key="index" id="nav-item5">
+      <image src="{{item.img_url}}" lazy-load="true" mode="aspectFill">
+      </image>
+      <text>{{item.title}}</text>
+    </view>
+  </view>
+</view>

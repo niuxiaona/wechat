@@ -1,0 +1,19 @@
+<!--pages/details/details.wxml-->
+<!--婚纱展示的列表  -->
+<view class="shop" >
+  <view class="shop-item" wx:for="{{list}}" wx:key="index">
+    <!--图片-->
+    <image src="{{item.img}}" class="shop-img"></image>
+    <!--信息-->
+    <view class="shop-info" >
+      <text class="shop-month">{{item.month}}</text>
+      <text class="shop-sheying">摄影师—{{item.sheying}}</text>
+      <text class="shop-style">风格—{{item.style}}</text>
+    </view>
+    <!--打分-->
+    <view class="shop-star">
+      <view class="star-after">★★★★★</view>
+      <view class="star-before" style="width:{{item.point}}%;">★★★★★</view>
+    </view>
+  </view>
+</view>
